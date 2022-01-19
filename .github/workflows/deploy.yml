@@ -22,10 +22,6 @@ jobs:
                     npm install
                     npm run test
                     npm run build
-            -   name: Publish
-                uses: JS-DevTools/npm-publish@v1
-                with:
-                    token: ${{ secrets.NPM_TOKEN }}
             -   name: Deploy to gh-pages
                 uses: JamesIves/github-pages-deploy-action@releases/v3
                 with:
